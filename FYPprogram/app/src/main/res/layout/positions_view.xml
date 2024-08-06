@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/positions_view"
+    android:paddingVertical="8dp"
+    android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/position_pr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_rectangle_positions"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.483"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.049" />
+
+            <TextView
+                android:id="@+id/currency"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="16dp"
+                android:text="EUR/USD"
+                android:textColor="@color/black"
+                android:textSize="24dp"
+                app:layout_constraintBottom_toBottomOf="@+id/position_pr"
+                app:layout_constraintEnd_toEndOf="@+id/position_pr"
+                app:layout_constraintHorizontal_bias="0.106"
+                app:layout_constraintStart_toStartOf="@+id/position_pr"
+                app:layout_constraintTop_toTopOf="@+id/position_pr"
+                app:layout_constraintVertical_bias="0.25" />
+
+            <ImageButton
+                android:id="@+id/img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/pound_to_dollar_small"
+                style="?android:attr/borderlessButtonStyle"
+                tools:layout_editor_absoluteX="170dp"
+                tools:layout_editor_absoluteY="47dp"
+                app:layout_constraintBottom_toBottomOf="@+id/position_pr"
+                app:layout_constraintEnd_toEndOf="@+id/position_pr"
+                app:layout_constraintStart_toStartOf="@+id/position_pr"
+                app:layout_constraintTop_toTopOf="@+id/position_pr"/>
+
+            <TextView
+                android:id="@+id/income"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="16dp"
+                android:text="5,607.33"
+                android:textColor="@color/black"
+                android:textSize="24dp"
+                app:layout_constraintBottom_toBottomOf="@+id/position_pr"
+                app:layout_constraintEnd_toEndOf="@+id/position_pr"
+                app:layout_constraintHorizontal_bias="0.818"
+                app:layout_constraintStart_toEndOf="@+id/currency"
+                app:layout_constraintTop_toTopOf="@+id/position_pr"
+                app:layout_constraintVertical_bias="0.25" />
+
+            <TextView
+                android:id="@+id/action"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="16dp"
+                android:text="BUY"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                app:layout_constraintBottom_toBottomOf="@+id/position_pr"
+                app:layout_constraintEnd_toEndOf="@+id/position_pr"
+                app:layout_constraintHorizontal_bias="0.086"
+                app:layout_constraintStart_toStartOf="@+id/position_pr"
+                app:layout_constraintTop_toTopOf="@+id/position_pr"
+                app:layout_constraintVertical_bias="0.815" />
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="16dp"
+                android:text="110.566"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                app:layout_constraintBottom_toBottomOf="@+id/position_pr"
+                app:layout_constraintEnd_toEndOf="@+id/position_pr"
+                app:layout_constraintHorizontal_bias="0.218"
+                app:layout_constraintStart_toStartOf="@+id/position_pr"
+                app:layout_constraintTop_toTopOf="@+id/position_pr"
+                app:layout_constraintVertical_bias="0.82" />
+
+            <TextView
+                android:id="@+id/text_closed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="16dp"
+                android:text="CLOSED"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                app:layout_constraintBottom_toBottomOf="@+id/position_pr"
+                app:layout_constraintEnd_toEndOf="@+id/position_pr"
+                app:layout_constraintHorizontal_bias="0.75"
+                app:layout_constraintStart_toStartOf="@+id/position_pr"
+                app:layout_constraintTop_toTopOf="@+id/position_pr"
+                app:layout_constraintVertical_bias="0.807" />
+
+            <TextView
+                android:id="@+id/closed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="16dp"
+                android:text="111.541"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                app:layout_constraintBottom_toBottomOf="@+id/position_pr"
+                app:layout_constraintEnd_toEndOf="@+id/position_pr"
+                app:layout_constraintHorizontal_bias="0.971"
+                app:layout_constraintStart_toStartOf="@+id/position_pr"
+                app:layout_constraintTop_toTopOf="@+id/position_pr"
+                app:layout_constraintVertical_bias="0.807" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

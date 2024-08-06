@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.fyp.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_mainActivity"
+            app:destination="@id/mainActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.example.fyp.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" />
+    <fragment
+        android:id="@+id/strategyFragment"
+        android:name="com.example.fyp.StrategyFragment"
+        android:label="fragment_strategy"
+        tools:layout="@layout/fragment_strategy" >
+        <action
+            android:id="@+id/action_strategyFragment_to_strategyInfoFragment"
+            app:destination="@id/strategyInfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/stockMarketFragment"
+        android:name="com.example.fyp.StockMarketFragment"
+        android:label="fragment_stock_market"
+        tools:layout="@layout/fragment_stock_market"  >
+        <action
+            android:id="@+id/action_stockMarketFragment_to_stockMarket2Fragment"
+            app:destination="@id/stockMarket2Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/positionsFragment"
+        android:name="com.example.fyp.PositionsFragment"
+        android:label="fragment_prediction"
+        tools:layout="@layout/fragment_positions" />
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.example.fyp.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+    <fragment
+        android:id="@+id/stockMarket2Fragment"
+        android:name="com.example.fyp.StockMarket2Fragment"
+        android:label="fragment_stock_market2"
+        tools:layout="@layout/fragment_stock_market2" >
+        <action
+            android:id="@+id/action_stockMarket2Fragment_to_positionsFragment"
+            app:destination="@id/positionsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/strategyInfoFragment"
+        android:name="com.example.fyp.StrategyInfoFragment"
+        android:label="fragment_strategy_info"
+        tools:layout="@layout/fragment_strategy_info" />
+</navigation>

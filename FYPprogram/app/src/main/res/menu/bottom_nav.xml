@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/homeFragment"
+        android:title="Home"
+        android:icon="@drawable/person"/>
+    <item
+        android:id="@+id/searchFragment"
+        android:title="Search"
+        android:icon="@drawable/search"/>
+    <item
+        android:id="@+id/strategyFragment"
+        android:title="Strategies"
+        android:icon="@drawable/strategy" />
+    <item
+        android:id="@+id/stockMarketFragment"
+        android:title="Stock Market"
+        android:icon="@drawable/stock"/>
+    <item
+        android:id="@+id/positionsFragment"
+        android:title="Prediction"
+        android:icon="@drawable/prediction"/>
+
+</menu>

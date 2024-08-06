@@ -1,0 +1,109 @@
+<resources>
+    <string name="app_name">FYP</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="log_in">Log In</string>
+    <string name="program">FYP</string>
+    <string name="home">This is an Educational based trading platform with short term predictions for stocks, developed as part of the coursework.</string>
+
+    <string name="mains">
+        This is a home page, where you can log out.
+        The next page is search page, where you can type your question.
+        On the next page, you can explore different trading strategies.
+        The fourth page is for checking current stock market, possible predictions and buy/sell options.
+        The last page is to view previous positions and close any opened.</string>
+
+    <string name="strategy_1">A news trading strategy involves trading based on news and market expectations, both before and following news releases.
+        Trading on news announcements can require a skilled mind-set as news can travel very quickly on digital media.
+        Traders will need to assess the news immediately after it’s released and make a quick judgement on how to trade it.
+        Some key considerations include: Is the news already fully factored into the price of an instrument or only partially priced in? Does the news match market expectations?
+        Understanding these differences in market expectations is crucial to success when using a news trading strategy.</string>
+    <string name="strategy_12">When trading based on news releases, it’s vital that the trader is aware of how financial markets operate.
+        Markets need energy to move and this comes from information flow such as news releases. Therefore, it’s common that news is already factored into the assets price.
+        This results from traders attempting to predict the results of future news announcements and in turn, the market’s response.
+        A news trading strategy is particularly useful for volatile markets, including when trading oil and other fluctuating commodities.</string>
+
+    <string name="strategy_2">The end-of-day (EOD) trading strategy involves trading near the close of markets.
+        EOD traders become active when it becomes clear that the price is going to ‘settle’ or close.
+        This strategy requires the studying of price action in comparison to the previous day’s price movements.
+        EOD traders can then speculate how the price could move based on the price action and decide on any indicators that they are using in their system.</string>
+    <string name="strategy_22">Traders should create a set of risk management orders including a limit order, a stop-loss order and a take-profit order to reduce any overnight risk.
+        This style of trading requires less time commitment than other trading strategies. This is because there is only a need to study charts at their
+        opening and closing times.</string>
+
+    <string name="strategy_3">The term ‘swing trading refers to trading both sides on the movements of any financial market. Swing traders aim to ‘buy’ a
+        security when they suspect that the market will rise. Otherwise, they can ‘sell’ an asset when they suspect that the price will fall.
+        Swing traders take advantage of the market’s oscillations as the price swings back and forth, from an overbought to oversold state.
+        Swing trading is purely a technical approach to analysing markets, achieved through studying charts and analysing the individual movements that
+        comprise a bigger picture trend.</string>
+    <string name="strategy_32">Successful swing trading relies on the interpretation of the length and duration of each swing, as these define important
+        support and resistance levels. Additionally, swing traders will need to identify trends where the markets encounter increasing levels of supply or demand.
+        Traders also consider if momentum is increasing or decreasing within each swing while monitoring trades.</string>
+
+    <string name="strategy_4">Intraday trading is suitable for traders that would like to actively trade in the daytime, generally as a full time profession.
+        They take advantage of price fluctuations in-between the market open and close hours, often holding multiple positions, but do not leave positions open
+        overnight in order to minimise the risk of overnight market volatility. It’s recommended that these types of traders follow an organised trading plan that
+        can quickly adapt to fast market movements.</string>
+    <string name="strategy_42">Just before the open of the FTSE and other European markets, traders should look to study the support and resistance levels and the possible
+        reactions to the previous night’s trading in the US, as well as moves that have occurred in the Far Eastern markets. Many traders look to trade European markets
+        in the first two hours when there is high liquidity. Otherwise, traders usually focus between 12pm – 5pm GMT when both the UK and US markets are open.</string>
+
+    <string name="strategy_5">This strategy describes when a trader uses technical analysis to define a trend, and only enters trades in the direction of the pre-determined
+        trend.
+
+        ‘The trend is your friend’
+
+        The above is a famous trading motto and one of the most accurate in the markets. Following the trend is different from being ‘bullish or bearish’.
+        Trend traders do not have a fixed view of where the market should go or in which direction. Success in trend trading can be defined by having an accurate system
+        to firstly determine and then follow trends. However, it’s crucial to stay alert and adaptable as the trend can quickly change. Trend traders need to be aware of
+        the risks of market reversals, those which can be mitigated with a trailing stop-loss order.</string>
+    <string name="strategy_52">Several trend-following tools can be used for analysing specific markets including equities, treasuries, currencies and commodities.
+        Trend traders will need to exercise their patience as ‘riding the trend’ can be difficult. However, with enough confidence in their trading system, the trend trader
+        should be able to stay disciplined and follow their rules. However, it’s equally important to know when your system has stopped working. This usually occurs due to
+        a fundamental market change, therefore it’s important to cut your losses short and let your profits run when trend trading.</string>
+
+    <string name="strategy_6">Traders who use a scalping strategy place very short-term trades with small price movements. Scalpers aim to ‘scalp’ a small profit from
+        each trade in the hope that all the small profits accumulate. As a scalper, you must have a disciplined exit strategy as a large loss can eliminate many other
+        profits that have accumulated slow and steadily.</string>
+    <string name="strategy_62">A scalper would operate away from the common mantra “let your profits run”, as scalpers tend to take their profits before the market
+        has a chance to move. As scalpers generally operate on a risk/reward ratio of around 1/1, it’s common for scalpers not to make a large profit per trade,
+        instead focusing on increasing their total number of smaller winning trades. Scalping is particularly common when trading currency pairs, so learn how to scalp forex.</string>
+
+    <string name="strategy_7">Position trading is a popular trading strategy where a trader holds a position for a long period of time, usually months or years,
+        ignoring minor price fluctuations in favor of profiting from long-term trends. Position traders tend to use fundamental analysis to evaluate potential price
+        trends within the markets, but also take into considerations other factors such as market trends and historical patterns.</string>
+    <string name="strategy_72">-</string>
+
+    <string name="stock_market">The stock market is a platform where public companies sell shares of their ownership to the public.
+        It is a marketplace where stocks or shares of publicly-traded companies are bought and sold. Investors can buy and sell stocks through a stock exchange,
+        such as the New York Stock Exchange (NYSE) or NASDAQ. The stock market provides companies with a way to raise capital by selling shares, and investors with
+        a way to profit from the growth of those companies. The value of stocks is influenced by a variety of factors, including company performance,
+        economic conditions, and investor sentiment.
+    The stock market is a platform where public companies sell shares of their ownership to the public.
+        It is a marketplace where stocks or shares of publicly-traded companies are bought and sold. Investors can buy and sell stocks through a stock exchange,
+        such as the New York Stock Exchange (NYSE) or NASDAQ. The stock market provides companies with a way to raise capital by selling shares, and investors with
+        a way to profit from the growth of those companies. The value of stocks is influenced by a variety of factors, including company performance,
+        economic conditions, and investor sentiment.</string>
+
+    <string name="p_information">In trading, positions refer to the ownership or holdings of financial instruments by traders or investors. A position represents the
+        quantity and type of assets held in a portfolio at a specific time. It can be either long or short. A long position involves buying an asset with the
+        expectation that its value will increase, while a short position involves selling an asset that is not currently owned, with the intention of buying it back
+        at a lower price. Position sizes vary based on the number of units held. Monitoring and managing positions are crucial aspects of trading, as traders make decisions
+        to buy or sell based on market conditions and their strategies, aiming to optimize their risk-reward profile.</string>
+
+    <string name="forex">Forex, short for foreign exchange, refers to the global decentralized market where currencies are traded. It is the largest and most liquid
+        financial market, with participants including banks, financial institutions, corporations, governments, and individual traders. Forex trading involves the
+        buying and selling of currency pairs, where one currency is exchanged for another at an agreed-upon price. Traders in the forex market aim to profit from
+        fluctuations in currency exchange rates by speculating on whether a currency will appreciate or depreciate relative to another. Factors such as economic indicators,
+        geopolitical events, and market sentiment influence currency movements. Forex trading operates 24 hours a day, five days a week, allowing for continuous trading
+        opportunities across different time zones. Traders can leverage margin and employ various strategies, including technical analysis, fundamental analysis, and
+        algorithmic trading, to participate in the forex market.</string>
+
+    <string name="trading">Trading refers to the buying and selling of financial instruments, such as stocks, bonds, commodities, currencies, or derivatives,
+        with the aim of generating profits from price fluctuations. Traders actively participate in various markets, utilizing their knowledge, analysis, and strategies
+        to take advantage of short-term opportunities. Trading can be done by individuals, institutions, or specialized firms, and it involves making decisions based on
+        market trends, technical indicators, fundamental analysis, and other factors. Different trading styles exist, including day trading, swing trading, position
+        trading, and algorithmic trading. The ultimate goal of trading is to generate returns by accurately predicting and capitalizing on price movements in order to
+        buy low and sell high or sell high and buy low. However, trading also carries inherent risks, and proper risk management and discipline are essential for long-term
+        success in the trading arena.</string>
+
+</resources>

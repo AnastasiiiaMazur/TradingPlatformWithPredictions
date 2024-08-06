@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintLeft_toRightOf="parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingTop="20dp">
+
+        <TextView
+            android:id="@+id/test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_rectangle"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.483"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.118" />
+
+        <ImageView
+            android:id="@+id/img"
+            android:src="@drawable/pound_to_dollar_small"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:elevation="16dp"
+            style="?android:attr/borderlessButtonStyle"
+            app:layout_constraintBottom_toBottomOf="@+id/test"
+            app:layout_constraintEnd_toEndOf="@+id/test"
+            app:layout_constraintStart_toStartOf="@+id/test"
+            app:layout_constraintTop_toTopOf="@+id/test" />
+
+        <Button
+            android:id="@+id/buy_button"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:background="@drawable/button_style"
+            android:elevation="16dp"
+            android:text="buy"
+            android:textSize="14dp"
+            app:layout_constraintBottom_toBottomOf="@+id/img"
+            app:layout_constraintEnd_toStartOf="@+id/img"
+            app:layout_constraintHorizontal_bias="0.482"
+            app:layout_constraintStart_toStartOf="@+id/test"
+            app:layout_constraintTop_toTopOf="@+id/test"
+            app:layout_constraintVertical_bias="0.285" />
+
+        <TextView
+            android:id="@+id/buy_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1.45675"
+            android:textColor="@color/main_color"
+            android:textSize="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/img"
+            app:layout_constraintStart_toStartOf="@+id/test"
+            app:layout_constraintTop_toBottomOf="@+id/buy_button" />
+
+        <Button
+            android:id="@+id/sell_button"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:background="@drawable/button_style"
+            android:elevation="16dp"
+            android:text="sell"
+            android:textSize="14dp"
+            app:layout_constraintBottom_toBottomOf="@+id/img"
+            app:layout_constraintEnd_toEndOf="@+id/test"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toEndOf="@+id/img"
+            app:layout_constraintTop_toTopOf="@+id/img"
+            app:layout_constraintVertical_bias="0.166" />
+
+        <TextView
+            android:id="@+id/sell_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1.45675"
+            android:textColor="@color/main_color"
+            android:textSize="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/test"
+            app:layout_constraintStart_toEndOf="@+id/img"
+            app:layout_constraintTop_toBottomOf="@+id/sell_button" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/lineChart"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:padding="9dp"
+        android:background="@drawable/gradient_bg"
+        android:layout_width="match_parent"
+        android:layout_height="250dp" />
+
+    <Button
+        android:id="@+id/predict"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show prediction"
+        android:background="@drawable/button_style"
+        android:textSize="14dp"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:id="@+id/buyAction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose quantity:"
+            android:textSize="20dp"
+            android:paddingVertical="10dp"
+            android:textColor="@color/main_color"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/progressTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="18dp"
+            android:textColor="@color/main_color"
+            android:layout_gravity="center" />
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:min="0"
+            android:max="100"
+            android:paddingVertical="10dp"
+            android:progress="0"/>
+
+        <Button
+            android:id="@+id/buy_sell"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:background="@drawable/button_style"
+            android:elevation="16dp"
+            android:paddingHorizontal="5dp"
+            android:text="sell"
+            android:textSize="17dp"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/actionMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="18dp"
+            android:paddingVertical="10dp"
+            android:textColor="@color/red"
+            android:layout_gravity="center" />
+
+    </LinearLayout>
+</LinearLayout>

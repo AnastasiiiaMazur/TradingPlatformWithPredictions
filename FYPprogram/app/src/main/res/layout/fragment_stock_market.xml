@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    tools:context=".StockMarketFragment"
+    android:id="@+id/fragment_stock_market">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="196dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginBottom="17dp"
+        android:text="Balance: £"
+        android:textColor="@color/main_color"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/test"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/current_balance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:layout_marginBottom="17dp"
+        android:text="1000"
+        android:textColor="@color/main_color"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/test"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/text"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageButton
+        android:id="@+id/eur_usd"
+        android:src="@drawable/eur_usd"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:elevation="16dp"
+        style="?android:attr/borderlessButtonStyle"
+        app:layout_constraintBottom_toBottomOf="@+id/test"
+        app:layout_constraintEnd_toEndOf="@+id/test"
+        app:layout_constraintStart_toStartOf="@+id/test"
+        app:layout_constraintTop_toTopOf="@+id/test" />
+
+    <TextView
+        android:id="@+id/eur_usd_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="16dp"
+        android:text="EUR/USD"
+        android:textColor="@color/black"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/eur_usd"
+        app:layout_constraintEnd_toStartOf="@+id/eur_usd"
+        app:layout_constraintStart_toStartOf="@+id/test"
+        app:layout_constraintTop_toTopOf="@+id/test" />
+
+    <TextView
+        android:id="@+id/eur_usd_price_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="16dp"
+        android:text="1.094778"
+        android:textColor="@color/black"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/eur_usd"
+        app:layout_constraintEnd_toEndOf="@+id/test"
+        app:layout_constraintStart_toEndOf="@+id/eur_usd"
+        app:layout_constraintTop_toTopOf="@+id/eur_usd" />
+
+    <TextView
+        android:id="@+id/eur_gbp_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="16dp"
+        android:text="EUR/GBP"
+        android:textColor="@color/black"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/test3"
+        app:layout_constraintEnd_toStartOf="@+id/eur_gbp"
+        app:layout_constraintStart_toStartOf="@+id/test3"
+        app:layout_constraintTop_toTopOf="@+id/test3" />
+
+    <TextView
+        android:id="@+id/eur_gbp_price_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="16dp"
+        android:text="1.094778"
+        android:textColor="@color/black"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/test3"
+        app:layout_constraintEnd_toEndOf="@+id/test3"
+        app:layout_constraintStart_toEndOf="@+id/eur_gbp"
+        app:layout_constraintTop_toTopOf="@+id/test3" />
+
+    <TextView
+        android:id="@+id/eur_chf_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="16dp"
+        android:text="EUR/CHF"
+        android:textColor="@color/black"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/test2"
+        app:layout_constraintEnd_toStartOf="@+id/eur_chf"
+        app:layout_constraintStart_toStartOf="@+id/test2"
+        app:layout_constraintTop_toTopOf="@+id/test2" />
+
+    <TextView
+        android:id="@+id/eur_chf_price_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="16dp"
+        android:text="1.094778"
+        android:textColor="@color/black"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/test2"
+        app:layout_constraintEnd_toEndOf="@+id/test2"
+        app:layout_constraintStart_toEndOf="@+id/eur_chf"
+        app:layout_constraintTop_toTopOf="@+id/test2" />
+
+    <ImageButton
+        android:id="@+id/eur_chf"
+        android:src="@drawable/eur_chf"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:elevation="16dp"
+        style="?android:attr/borderlessButtonStyle"
+        app:layout_constraintBottom_toBottomOf="@+id/test2"
+        app:layout_constraintEnd_toEndOf="@+id/test2"
+        app:layout_constraintStart_toStartOf="@+id/test2"
+        app:layout_constraintTop_toTopOf="@+id/test2" />
+
+    <ImageButton
+        android:id="@+id/eur_gbp"
+        android:src="@drawable/eur_gbp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:elevation="16dp"
+        style="?android:attr/borderlessButtonStyle"
+        app:layout_constraintBottom_toBottomOf="@+id/test3"
+        app:layout_constraintEnd_toEndOf="@+id/test3"
+        app:layout_constraintStart_toStartOf="@+id/test3"
+        app:layout_constraintTop_toTopOf="@+id/test3" />
+
+    <TextView
+        android:id="@+id/test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_rectangle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.118" />
+
+    <TextView
+        android:id="@+id/test2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="356dp"
+        android:background="@drawable/custom_rectangle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/test3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_rectangle"
+        app:layout_constraintBottom_toTopOf="@+id/test2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/test"
+        app:layout_constraintVertical_bias="0.448" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
